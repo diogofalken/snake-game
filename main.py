@@ -25,6 +25,9 @@ while run:
 
     # Check if game ended
     if player.PlayerEndedGame(END_GAME) == True:
+        pygame.display.set_caption("End Game!!")
+        pygame.time.delay(3000)
+
         run = False
 
     for event in pygame.event.get():
